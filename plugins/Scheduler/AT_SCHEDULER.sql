@@ -1,4 +1,11 @@
-create or replace package AT_SCHEDULER as
+--------------------------------------------------------
+--  File created - Sunday-November-15-2015   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Package AT_SCHEDULER
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE "PLAYGROUND"."AT_SCHEDULER" as
  
 type t_job_action_arg is record(
     argument_name varchar2(100),
@@ -69,7 +76,12 @@ procedure dummy_proc;
  
 end;
 
-create or replace package body at_scheduler as
+/
+--------------------------------------------------------
+--  DDL for Package Body AT_SCHEDULER
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE BODY "PLAYGROUND"."AT_SCHEDULER" as
  
 /** 
  * Check if job exists 
@@ -192,3 +204,5 @@ begin
 end dummy_proc ;
  
 end;
+
+/
